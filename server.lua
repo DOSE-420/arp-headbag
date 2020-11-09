@@ -22,7 +22,6 @@ ARPCore.Commands.Add("bagoff", "Remove the headbag.", {}, true, function(source,
     TriggerClientEvent("arp-headbag:takeoff", source)
 end)
 
--- Kollar om spelaren har en ögonbindel
 ARPCore.Functions.CreateCallback('arp-headbag:itemCheck', function(source, cb )
     local Player = ARPCore.Functions.GetPlayerFromId(src)
     local item   = Player.GetInventoryItem('headbag').count
