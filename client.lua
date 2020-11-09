@@ -27,13 +27,13 @@ end
 
 end
 
-RegisterNetEvent('arp-headbag:naloz') --This event open menu
-AddEventHandler('arp-headbag:naloz', function()
+RegisterNetEvent('arp-headbag:shit') --This event open menu
+AddEventHandler('arp-headbag:shit', function()
   NajblizszyGracz()
 end)
 
-RegisterNetEvent('arp-headbag:nalozNa') --This event put head bag on nearest player
-AddEventHandler('arp-headbag:nalozNa', function(gracz)
+RegisterNetEvent('arp-headbag:puton') --This event put head bag on nearest player
+AddEventHandler('arp-headbag:puton', function(gracz)
     local playerPed = GetPlayerPed(-1)
     Worek = CreateObject(GetHashKey("prop_money_bag_01"), 0, 0, 0, true, true, true) -- Create head bag object!
     AttachEntityToEntity(Worek, GetPlayerPed(-1), GetPedBoneIndex(GetPlayerPed(-1), 12844), 0.2, 0.04, 0, 0, 270.0, 60.0, true, true, false, true, 1, true) -- Attach object to head
@@ -49,8 +49,8 @@ SendNUIMessage({type = 'closeAll'})
 HaveBagOnHead = false
 end)
 
-RegisterNetEvent('arp-headbag:zdejmijc') --This event delete head bag from player head
-AddEventHandler('arp-headbag:zdejmijc', function(gracz)
+RegisterNetEvent('arp-headbag:takeoff') --This event delete head bag from player head
+AddEventHandler('arp-headbag:takeoff', function(gracz)
   DeleteEntity(Worek)
     SetEntityAsNoLongerNeeded(Worek)
     SendNUIMessage({type = 'closeAll'})
