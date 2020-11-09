@@ -12,8 +12,8 @@ AddEventHandler('arp-headbag:sendclosest', function(closestPlayer)
     najblizszy = closestPlayer
 end)
 
-RegisterServerEvent('arp-headbag:zdejmij')
-AddEventHandler('arp-headbag:zdejmij', function()
+RegisterServerEvent('arp-headbag:shit')
+AddEventHandler('arp-headbag:shit', function()
     TriggerClientEvent('arp-headbag:takeoff', najblizszy)
 end)
 
