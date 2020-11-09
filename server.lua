@@ -24,7 +24,7 @@ end)
 
 -- Kollar om spelaren har en ögonbindel
 ARPCore.Functions.CreateCallback('arp-headbag:itemCheck', function(source, cb )
-    local Player = ARPCOre.Functions.GetPlayerFromId(src)
+    local Player = ARPCore.Functions.GetPlayerFromId(src)
     local item   = Player.getInventoryItem('headbag').count
     if item > 0 then
       cb(true)
