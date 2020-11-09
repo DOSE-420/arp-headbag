@@ -17,13 +17,6 @@ AddEventHandler('arp-headbag:zdejmij', function()
     TriggerClientEvent('arp-headbag:takeoff', najblizszy)
 end)
 
-ARPCore.Functions.CreateUseableItem("headbag", function(source, item)
-    local src = source
-    local Player = ARPCore.Functions.GetPlayer(source)
-    TriggerClientEvent('arp-headbag:shit',src)
-    TriggerEvent('arp-headbag:debugger', source)
-end)
-
 ARPCore.Commands.Add("bagoff", "Remove the headbag.", {}, true, function(source, args)
 	local Player = ARPCore.Functions.GetPlayer(source)
     TriggerClientEvent("arp-headbag:takeoff", source)
