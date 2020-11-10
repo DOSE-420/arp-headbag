@@ -23,6 +23,7 @@ ARPCore.Commands.Add("bagoff", "Remove the headbag.", {}, true, function(source,
 end)
 
 ARPCore.Functions.CreateCallBack('arp-headbag:itemCheck', function(source, cb )
+    local src = source
     local Player = ARPCore.Functions.GetPlayerFromId(src)
     local item   = Player.GetInventoryItem('headbag').count
     if item > 0 then
