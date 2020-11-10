@@ -22,7 +22,7 @@ ARPCore.Commands.Add("bagoff", "Remove the headbag.", {}, true, function(source,
     TriggerClientEvent("arp-headbag:takeoff", source)
 end)
 
-ARPCore.Functions.CreateCallback('arp-headbag:itemCheck', function(source, cb )
+ARPCore.Functions.CreateCallBack('arp-headbag:itemCheck', function(source, cb )
     local Player = ARPCore.Functions.GetPlayerFromId(src)
     local item   = Player.GetInventoryItem('headbag').count
     if item > 0 then
