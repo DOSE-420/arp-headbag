@@ -6,7 +6,7 @@
 
 **Add this code on qb-core/shared.lua**: 
 
-``["headbag"] = {["name"] = "headbag", ["label"] = "Head Bag", ["weight"] = 1000, ["type"] = "item", ["image"] = "killerwhale.png", ["unique"] = false, 	["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "Fishing Rod for fishing."},``
+``["headbag"] = {["name"] = "headbag", ["label"] = "Head Bag", ["weight"] = 1000, ["type"] = "item", ["image"] = "headbag.png", ["unique"] = false, 	["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "Ordinary Paper Bag"},``
 
 
 (*This is rewritten and recreated version of esx_headbag.*)
