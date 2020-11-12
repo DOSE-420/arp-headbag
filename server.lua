@@ -33,3 +33,11 @@ ARPCore.Functions.CreateCallBack('arp-headbag:itemCheck', function(source, cb )
       cb(false)
     end
   end)
+
+ARPCore.Functions.CreateUseableItem("headbag", function(source, item)
+    local Player = ARPCore.Functions.GetPlayer(source)
+	if Player.Functions.GetItemBySlot(item.slot) ~= nil then
+		local itemName = item.name
+		TriggerClientEvent('arp-headbag:nalozNa', source,  'headbag')
+    end
+end)
